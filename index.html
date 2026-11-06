@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101d31" />
+  <meta name="description" content="천안시청 안전 담당자의 개인 포트폴리오입니다." />
+  <title>Portfolio | 천안시청 안전업무 담당자</title>
+  <style>
+    :root{color-scheme:light;--navy:#101d31;--ink:#1b2940;--muted:#66758a;--line:#dce5ed;--paper:#f5f8fb;--white:#fff;--accent:#1c79be;--teal:#27a9a2;--shadow:0 20px 65px rgba(20,42,68,.08);}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;letter-spacing:-.035em}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:#b9eae7;color:#102536}
+    .shell{max-width:1220px;margin:0 auto;padding:0 34px}.top{background:#101d31;color:#fff;position:relative;overflow:hidden;isolation:isolate}.top:before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(54,166,196,.22),transparent 65%);right:-190px;top:-250px;pointer-events:none;z-index:-1}.top:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(90deg,transparent 18%,black 100%);z-index:-1;pointer-events:none}
+    header{height:88px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.12)}.brand{font-weight:800;font-size:19px;letter-spacing:.01em;display:flex;align-items:center;gap:12px}.brand-mark{height:36px;width:36px;border-radius:11px;background:linear-gradient(145deg,#74e4d6,#4b9ee0);display:grid;place-items:center;color:#10253a;font-weight:900;font-size:16px}.brand small{font-size:10px;letter-spacing:.17em;display:block;color:#a9b8c9;font-weight:600;margin-top:2px}.nav{display:flex;gap:32px;color:#c1cfde;font-size:13px;font-weight:600}.nav a:hover,.nav a:focus-visible{color:white}.nav a:focus-visible,.primary:focus-visible,.secondary:focus-visible,.project-link:focus-visible,.mobile-nav a:focus-visible{outline:3px solid #62dace;outline-offset:4px;border-radius:6px}.nav-cta{border:1px solid rgba(255,255,255,.3);padding:11px 16px;border-radius:100px;color:#fff;font-size:12px;font-weight:700;transition:.2s}.nav-cta:hover{background:#fff;color:var(--navy)}
+    .hero{padding:96px 0 105px;display:grid;grid-template-columns:1.24fr .76fr;gap:60px;align-items:center}.eyebrow{display:flex;align-items:center;gap:10px;text-transform:uppercase;font-size:12px;letter-spacing:.18em;font-weight:750;color:#8fded8}.eyebrow:before{content:"";width:26px;height:2px;background:#75d8ce}.hero h1{font-size:clamp(43px,5.8vw,76px);line-height:1.16;letter-spacing:-.07em;margin:28px 0 27px;font-weight:800}.hero h1 em{font-style:normal;color:#7addd3}.hero p{font-size:17px;line-height:1.9;color:#becddd;max-width:550px;word-break:keep-all;margin:0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}.primary,.secondary{padding:16px 22px;display:inline-flex;align-items:center;gap:25px;border-radius:10px;font-size:14px;font-weight:750;transition:transform .2s,background .2s,box-shadow .2s}.primary{background:#80e3d7;color:#112d39}.primary:hover{background:#a6f2e9;transform:translateY(-2px);box-shadow:0 12px 24px #0002}.secondary{color:#fff;border:1px solid #6a788d}.secondary:hover{background:#ffffff15;transform:translateY(-2px)}.arrow{font-size:18px;line-height:1}
+    .profile{justify-self:end;width:min(100%,380px);position:relative}.portrait{border:1px solid #ffffff36;background:linear-gradient(150deg,#2b435c,#142841);border-radius:28px;padding:30px;min-height:340px;box-shadow:0 32px 55px #0003;position:relative;overflow:hidden}.portrait:before{content:"";position:absolute;width:240px;height:240px;background:linear-gradient(135deg,#4aa9c070,#8ce5d530);border-radius:50%;right:-60px;bottom:-90px}.portrait:after{content:"";position:absolute;width:150px;height:150px;border:1px solid #ffffff1c;border-radius:50%;right:0;top:30px}.micro{font-size:11px;letter-spacing:.17em;color:#9cb5c7;font-weight:700}.portrait-icon{height:92px;width:92px;background:#87e3d8;border-radius:27px;margin:64px 0 28px;display:grid;place-items:center;color:#15354a;box-shadow:0 16px 38px #0003}.portrait-icon svg{height:51px;width:51px}.portrait h2{font-size:25px;letter-spacing:-.045em;margin:0 0 9px}.portrait p{color:#c1d0dc;font-size:13px;line-height:1.6;margin:0}.status{display:flex;align-items:center;gap:8px;color:#ccebe6;font-size:12px;font-weight:700;margin-top:25px}.dot{height:8px;width:8px;background:#71e8bd;border-radius:50%;box-shadow:0 0 0 5px #71e8bd25}.floating{position:absolute;top:-21px;right:-16px;border:1px solid #dae9ed50;background:#f7fcff;color:#234052;padding:13px 16px;border-radius:14px;box-shadow:0 15px 30px #0002;font-weight:800;font-size:12px;letter-spacing:.01em}.floating span{display:block;color:#5b7d90;margin-bottom:4px;font-size:10px;letter-spacing:.1em}
+    main{padding-top:78px;padding-bottom:50px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.kicker{font-size:11px;color:#178c9b;letter-spacing:.16em;font-weight:850;text-transform:uppercase;margin:0 0 12px}.section-heading h2{font-size:34px;line-height:1.25;letter-spacing:-.055em;margin:0}.section-heading>p{font-size:14px;color:var(--muted);line-height:1.7;max-width:400px;margin:0}.about-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:18px}.card{border:1px solid var(--line);background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:27px;min-height:226px}.card .symbol{width:42px;height:42px;background:#e8f4fa;border-radius:13px;display:grid;place-items:center;color:#1476a7;margin-bottom:30px}.symbol svg{width:23px;height:23px}.card .label{font-size:12px;color:#7590a1;margin:0 0 10px;font-weight:750}.card h3{font-size:21px;letter-spacing:-.05em;margin:0 0 10px}.card p{font-size:13px;line-height:1.8;color:#6b7b8d;margin:0;word-break:keep-all}.card.featured{background:#dff2f0;border-color:#c9e9e4}.card.featured .symbol{background:#fff;color:#168d90}.card.featured p{color:#4c6972}.card .tag{display:inline-block;border:1px solid #aed8d3;padding:5px 10px;border-radius:50px;color:#267c7a;font-size:11px;font-weight:750;margin-top:16px}
+    .philosophy{margin-top:18px;display:grid;grid-template-columns:1.15fr 1fr;gap:18px}.approach{background:#fff;border:1px solid var(--line);border-radius:18px;padding:33px 36px;display:flex;gap:27px;align-items:center}.approach .num{font-size:54px;font-weight:850;color:#cfdee8;letter-spacing:-.07em}.approach h3{font-size:17px;margin:0 0 8px}.approach p{font-size:13px;color:var(--muted);margin:0;line-height:1.8;word-break:keep-all}.trait{background:#edf3f9;border:1px solid #e1e9f1;border-radius:18px;padding:30px 35px;display:flex;align-items:center;justify-content:space-between;gap:16px}.trait h3{font-size:16px;margin:0 0 7px}.trait p{font-size:13px;color:var(--muted);margin:0;line-height:1.8}.trait strong{font-size:31px;color:#257eab;letter-spacing:-.06em}
+    .work{padding-top:90px}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{padding:29px;border:1px solid var(--line);border-radius:18px;background:white;min-height:288px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s,box-shadow .2s}.project:hover{transform:translateY(-5px);border-color:#8acac9;box-shadow:0 18px 35px #17375316}.project-top{display:flex;justify-content:space-between;align-items:center}.project .index{font-size:46px;color:#dae5ec;font-weight:850;line-height:1}.project .pill{font-size:11px;border:1px solid #d7e5ed;color:#678399;border-radius:100px;padding:7px 11px;font-weight:700}.project h3{font-size:22px;margin:24px 0 10px;letter-spacing:-.05em}.project p{font-size:13px;color:var(--muted);line-height:1.8;margin:0 0 25px}.project-link{margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #e8eef2;padding-top:16px;font-size:13px;font-weight:800;color:#1d759c}.project-link .circle{height:34px;width:34px;border:1px solid #c7e1e9;border-radius:50%;display:grid;place-items:center;transition:.2s}.project:hover .circle{background:#1b7cac;border-color:#1b7cac;color:white}.work-note{font-size:12px;color:#8794a4;margin:15px 0 0}
+    .closing{background:#16273d;color:white;border-radius:22px;margin-top:86px;padding:46px 50px;display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative;overflow:hidden}.closing:after{content:"";height:250px;width:250px;border:1px solid #ffffff18;border-radius:50%;position:absolute;right:15%;top:-145px;pointer-events:none}.closing span{font-size:11px;font-weight:800;color:#75dcd2;letter-spacing:.14em}.closing h2{font-size:26px;margin:10px 0 10px;letter-spacing:-.05em}.closing p{font-size:13px;margin:0;color:#b6cad9;line-height:1.8}.closing a{border:1px solid #9bafbccc;border-radius:12px;padding:14px 19px;white-space:nowrap;font-weight:750;font-size:13px;transition:.2s}.closing a:hover{background:#ffffff15}
+    footer{display:flex;justify-content:space-between;gap:15px;color:#8492a3;font-size:12px;padding:38px 0}.mobile-nav{display:none}
+    @media(max-width:900px){.hero{grid-template-columns:1fr .8fr;gap:26px}.about-grid{grid-template-columns:repeat(2,1fr)}.card.featured{grid-column:span 2}.portrait{min-height:310px}.project-grid{gap:12px}.project{padding:22px}.project h3{font-size:19px}}
+    @media(max-width:680px){.shell{padding:0 21px}header{height:76px}.nav,.nav-cta{display:none}.mobile-nav{display:flex;gap:17px;font-size:12px;color:#c4d2dc}.hero{padding:58px 0 75px;grid-template-columns:1fr;gap:55px}.hero h1{font-size:48px}.hero p{font-size:15px}.profile{justify-self:stretch;width:100%;max-width:420px;margin:auto}.portrait{min-height:285px}.portrait-icon{margin-top:38px}.floating{right:-6px}.section-heading{display:block}.section-heading h2{font-size:29px}.section-heading>p{margin-top:13px}.about-grid,.philosophy,.project-grid{grid-template-columns:1fr}.card.featured{grid-column:auto}.card{min-height:auto}.card .symbol{margin-bottom:22px}.approach,.trait{padding:25px}.project{min-height:250px}.work{padding-top:70px}.closing{margin-top:70px;padding:30px 25px;display:block}.closing a{display:inline-block;margin-top:23px}footer{flex-direction:column;gap:8px}main{padding-top:60px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+<div class="top" id="home">
+  <div class="shell">
+    <header>
+      <a href="#home" class="brand" aria-label="포트폴리오 홈"><span class="brand-mark">P.</span><span>PORTFOLIO<small>PUBLIC SERVICE · SAFETY</small></span></a>
+      <nav class="nav" aria-label="주 메뉴"><a href="#about">소개</a><a href="#values">업무 방식</a><a href="#projects">프로젝트</a></nav>
+      <nav class="mobile-nav" aria-label="모바일 메뉴"><a href="#about">소개</a><a href="#projects">프로젝트</a></nav>
+      <a class="nav-cta" href="#projects">프로젝트 보기 ↗</a>
+    </header>
+    <section class="hero" aria-label="메인 소개">
+      <div>
+        <div class="eyebrow">PUBLIC SAFETY · PERSONAL PORTFOLIO</div>
+        <h1>원칙을 지키고,<br><em>안전을 생각합니다.</em></h1>
+        <p>안녕하세요. 천안시청에서 시민의 안전을 책임지고 있습니다. 체계적인 준비와 책임감 있는 실무를 중요하게 생각하며, 더 안전한 일상을 위한 업무에 집중합니다.</p>
+        <div class="hero-actions"><a class="primary" href="#about">저를 소개합니다 <span class="arrow" aria-hidden="true">↗</span></a><a class="secondary" href="#projects">프로젝트 살펴보기 <span class="arrow" aria-hidden="true">→</span></a></div>
+      </div>
+      <div class="profile">
+        <div class="floating"><span>PERSONALITY</span>ISTJ · 체계적 실무형</div>
+        <div class="portrait">
+          <div class="micro">ABOUT MY WORK</div>
+          <div class="portrait-icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m32 6 22 9v15c0 15-9 24-22 29C19 54 10 45 10 30V15z"/><path d="m22 32 7 7 14-15"/></svg></div>
+          <h2>안전을 위한 책임 있는 실무</h2>
+          <p>천안시청 · 안전 담당<br>기준과 절차를 바탕으로 신중하게 일합니다.</p>
+          <div class="status"><span class="dot" aria-hidden="true"></span>SAFETY FIRST · RESPONSIBILITY ALWAYS</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<main class="shell">
+  <section id="about" aria-labelledby="about-title">
+    <div class="section-heading"><div><p class="kicker">01 / ABOUT ME</p><h2 id="about-title">저를 소개합니다</h2></div><p>작은 위험도 놓치지 않는 세심함과 일관된 실행을 업무의 기본으로 삼습니다.</p></div>
+    <div class="about-grid">
+      <article class="card featured"><div class="symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1M9 13h1m4 0h1M10 21v-5h4v5"/></svg></div><p class="label">ORGANIZATION</p><h3>천안시청</h3><p>시민의 안전과 일상을 뒷받침하는 공공서비스 현장에서 업무를 수행합니다.</p><span class="tag">공공행정 · 시민안전</span></article>
+      <article class="card"><div class="symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3 3 7v5c0 5 3.5 8 9 10 5.5-2 9-5 9-10V7z"/><path d="m9 12 2 2 4-4"/></svg></div><p class="label">WORK FIELD</p><h3>재난 관련 업무</h3><p>재난안전 분야의 행정과 실무를 담당하며, 예방과 대응의 중요성을 생각합니다.</p></article>
+      <article class="card"><div class="symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m8 10 2 2 5-5M8 17h8"/></svg></div><p class="label">PERSONALITY</p><h3>ISTJ</h3><p>책임감, 꼼꼼함, 원칙 준수를 바탕으로 계획을 세우고 꾸준히 실행하는 성향입니다.</p></article>
+    </div>
+    <div class="philosophy" id="values">
+      <div class="approach"><span class="num">01</span><div><h3>원칙에 충실한 업무</h3><p>정해진 기준과 절차를 확인하고, 필요한 일을 차근차근 완수하는 방식을 지향합니다.</p></div></div>
+      <div class="trait"><div><h3>제가 중요하게 생각하는 가치</h3><p>정확성 · 책임감 · 꾸준함</p></div><strong>ISTJ</strong></div>
+    </div>
+  </section>
+  <section class="work" id="projects" aria-labelledby="projects-title">
+    <div class="section-heading"><div><p class="kicker">02 / PROJECTS</p><h2 id="projects-title">프로젝트 바로가기</h2></div><p>추후 작업물을 연결할 수 있도록 준비한 3개의 독립 페이지입니다.</p></div>
+    <div class="project-grid">
+      <article class="project"><div class="project-top"><span class="index">01</span><span class="pill">추후 연결</span></div><h3>프로젝트 1</h3><p>첫 번째 프로젝트 또는 업무 사례를 소개할 공간입니다.</p><a class="project-link" href="1.html" aria-label="프로젝트 1 페이지로 이동">1.html 열기 <span class="circle" aria-hidden="true">↗</span></a></article>
+      <article class="project"><div class="project-top"><span class="index">02</span><span class="pill">추후 연결</span></div><h3>프로젝트 2</h3><p>두 번째 프로젝트 또는 업무 자료를 소개할 공간입니다.</p><a class="project-link" href="2.html" aria-label="프로젝트 2 페이지로 이동">2.html 열기 <span class="circle" aria-hidden="true">↗</span></a></article>
+      <article class="project"><div class="project-top"><span class="index">03</span><span class="pill">추후 연결</span></div><h3>프로젝트 3</h3><p>세 번째 프로젝트 또는 결과물을 소개할 공간입니다.</p><a class="project-link" href="3.html" aria-label="프로젝트 3 페이지로 이동">3.html 열기 <span class="circle" aria-hidden="true">↗</span></a></article>
+    </div>
+    <p class="work-note">※ 현재는 링크만 준비되어 있습니다. 같은 폴더에 1.html, 2.html, 3.html 파일을 추가하면 연결됩니다.</p>
+  </section>
+  <section class="closing" aria-label="마무리"><div><span>MY WORK PHILOSOPHY</span><h2>신뢰는 작은 실천에서 시작됩니다.</h2><p>일상의 안전을 지키는 일, 기본을 놓치지 않는 자세로 임하겠습니다.</p></div><a href="#home">맨 위로 ↑</a></section>
+</main>
+<div class="shell"><footer><span>© <span id="year">2026</span> PERSONAL PORTFOLIO</span><span>Cheonan City Hall · Disaster Management · ISTJ</span></footer></div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
